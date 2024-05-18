@@ -1,0 +1,204 @@
+*{
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+  }
+
+ .text-overlay{
+    position: absolute;
+    top: 23%; 
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #ffff;
+    background-color: #d2093c;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+ }
+
+  .text-overlay-title {
+    position: absolute; /* Posicionamiento absoluto para superponer el texto sobre la imagen */
+    top: 50%; /* Colocar el texto en la mitad superior del contenedor */
+    left: 30%; /* Colocar el texto en el centro del contenedor */
+    transform: translate(-50%, -50%); /* Centrar el texto verticalmente */
+    color: #ffff;
+    font-size: 45px;
+    padding: 20px; /* Espaciado interno del texto */
+    border-radius: 10px; /* Bordes redondeados para el contenedor del texto */
+    max-width: 80%; /* Ancho máximo del contenedor del texto */
+  }
+
+.img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* FIRST SECTION */
+
+  .firstsection-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  .firstsection-img {
+    position: relative;
+    overflow: hidden; /* Para ocultar parte de la segunda imagen que esté fuera de los límites del contenedor */
+  }
+
+  .background-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .overlay-img {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation: upAndDown 3s infinite alternate; /* Animación de subir y bajar */
+  }
+
+
+.firstsection-text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstsection-text-title{
+    color: #00306E;
+    font-size: 50px;
+    margin-top: 2em;
+}
+
+.firstsection-text-title-red{
+    color: #00306E;
+    font-size: 50px;
+    color: #D2093C
+}
+
+.paragraph{
+    font-size: 23px;
+    font-weight: 400px;
+    color: rgb(119, 119, 119);
+    margin-bottom: 0.3em;
+}
+
+.paragraph-freeguide{
+    font-size: 19px;
+    font-weight: 400px;
+    color: rgb(119, 119, 119);
+    margin-top: 0.8em;
+}
+
+.second-paragraph{
+    font-size: 18px;
+    color: rgb(126, 124, 124);
+    font-weight: 400px;
+    margin-bottom: 0.3em;
+}
+
+.free-guide{
+    color: #D83051;
+}
+
+.separator{
+    margin-top: 30px;
+    height: 0.3px;
+    width: 350px;
+    background-color: grey;
+    margin-bottom: 2.5em;
+}
+
+.grey-template{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 20em;
+    background-color: #F5F5F5;
+}
+
+  /* POPULAR COURSES SECTION */
+
+.popular-courses-title{
+    color: #00306E;
+    font-size: 30px;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+.button-courses{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid rgba(0,48,110,.1);
+    border-radius: 6px;
+    color: #00306E;
+    width: 220px;
+    height: 55px;
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: #ffff;
+    background-color: #D2093C;
+    transition: all 0.3s ease;
+}
+
+.no-courses-message{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@keyframes upAndDown {
+    0% {
+      transform: translate(-50%, -50%) translateY(-8%);
+    }
+    100% {
+      transform: translate(-50%, -50%) translateY(8%);
+    }
+  }
+
+  /* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .text-overlay-title {
+      padding: 4%;
+      font-size: 0.8em; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+    }
+  }
+  
+  /* Media query para pantallas extra pequeñas */
+  @media screen and (max-width: 576px) {
+    .text-overlay-title {
+      padding: 6%;
+      font-size: 0.7em; /* Reducir aún más el tamaño de fuente para pantallas muy pequeñas */
+    }
+  }

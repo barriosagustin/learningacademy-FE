@@ -1,0 +1,44 @@
+.related-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.reviews{
+    color: #FFA438;
+    font-size: 16px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+}
+
+  .all-courses-card-info {
+    display: flex;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 16px; /* Ajusta según sea necesario */
+}
+  
+  .info-item p {
+    margin-left: 8px; /* Espacio entre el icono y el texto */
+    margin-top: 7px;
+    font-size: 15px;
+    color: #777777;
+}
+
+  .badge {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    background-color: #D2093C;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .all-courses-paginator{
+    margin-top: 2em;
+  }

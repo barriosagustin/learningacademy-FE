@@ -1,0 +1,60 @@
+.button-previous{
+    width: 230px;
+    height: 50px;
+    background-color: black;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-completed{
+    width: 230px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(41, 145, 41);
+    color: beige;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-next{
+    width: 230px;
+    height: 50px;
+    background-color: black;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-previous:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  .button-previous:hover:not(:disabled) {
+    background-color: red;
+  }
+
+.button-next:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  .button-next:hover:not(:disabled) {
+    background-color: red;
+  }
+
+.button-previous:hover {
+    background-color: darkgrey;
+  }
+
+  .button-completed:hover {
+    background-color: darkgrey;
+  }
+
+  .button-next:hover {
+    background-color: darkgrey;
+  }

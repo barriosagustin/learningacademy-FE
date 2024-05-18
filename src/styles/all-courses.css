@@ -1,0 +1,67 @@
+.text-allcourses-overlay-title{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffff;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.ul-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.sortby-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5em;
+    margin-bottom: 15px;
+}
+
+.select-sortby{
+    background: none;
+    border: none;
+    border-radius: 6px;
+    color: #5b5f64;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 15px;
+    padding: 12px 15px;
+}
+
+.all-courses-card-section{
+    display: grid;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 18px;
+    margin:15px
+}
+
+.no-courses-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .no-courses-message h2 {
+    margin-bottom: 20px;
+  }
+  
+  .no-courses-message img {
+    margin-top: 10px;
+  }

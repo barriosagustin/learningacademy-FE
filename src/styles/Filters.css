@@ -1,0 +1,26 @@
+.content-filters{
+    width: 65%;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.filters-container {
+display: flex;
+justify-content: center;
+margin: 50px 0;
+}
+
+.select{
+    height: 30px;
+    margin-top: 12px;
+    width: 60%;
+    margin: 0 8px;
+}
+
+.icon-filters {
+    order: -1; 
+  }

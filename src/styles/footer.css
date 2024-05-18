@@ -1,0 +1,41 @@
+.footer{
+    background-color: black;
+    height: 450px;
+}
+
+.footer-titles{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    font-size: 23px;
+    color: white;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.footer-paragraph{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.footer-separator{
+    margin-top: 5em;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.facebook-icon:hover{
+    background-color: grey;
+    cursor: pointer;
+}
