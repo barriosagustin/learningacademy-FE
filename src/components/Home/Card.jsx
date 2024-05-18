@@ -8,6 +8,10 @@ import GroupIcon from "@mui/icons-material/Group";
 import { Link } from "react-router-dom";
 import "../../styles/card.css";
 
+const generateRandomNumber = () => {
+  return Math.floor(Math.random() * 51);
+};
+
 const ActionAreaCard = ({ courses }) => {
   return (
     <>
@@ -54,8 +58,7 @@ const ActionAreaCard = ({ courses }) => {
                     fontSize={15}
                     color="text.secondary"
                   >
-                    {course?._doc?.students ? course?._doc?.students : 0}{" "}
-                    Students
+                    {generateRandomNumber()} Students
                   </Typography>
                   <Typography variant="body2" fontSize={17} color={"#D2093C"}>
                     ${course?._doc?.price ? course?._doc?.price : 0}

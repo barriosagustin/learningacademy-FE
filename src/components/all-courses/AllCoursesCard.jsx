@@ -12,8 +12,6 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import "../../styles/all-courses-card.css";
 
 const AllCoursesCard = ({ courses }) => {
-  console.log(courses);
-
   return (
     <>
       {courses.map((course, index) => (

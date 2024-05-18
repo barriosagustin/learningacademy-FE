@@ -25,6 +25,10 @@ const CourseDetailCard = ({ course }) => {
     navigateTo(`/course/${course?.title}/${course?._id}`);
   };
 
+  const generateRandomNumber = () => {
+    return Math.floor(Math.random() * 51);
+  };
+
   return (
     <>
       <Card
@@ -78,7 +82,7 @@ const CourseDetailCard = ({ course }) => {
             variant="body2"
           >
             <span>Enrolled:</span>
-            <span>{course.students ?? 0} students</span>
+            <span>{generateRandomNumber()} students</span>
           </Typography>
           <Divider sx={{ marginY: 2 }} />
           <Typography
