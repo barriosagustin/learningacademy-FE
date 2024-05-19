@@ -27,7 +27,7 @@ const Footer = () => {
                 <LocalPhoneIcon /> +(402) 762 441 83
               </p>
               <p className="footer-paragraph">
-                <EmailIcon /> info@echooling.com
+                <EmailIcon /> info@academy.com
               </p>
             </div>
             <div className="footer-aboutus">
@@ -48,7 +48,7 @@ const Footer = () => {
           <hr className="footer-separator" />
           <div className="social-media">
             <div className="logo-section">
-              <p>© 2022 Echooling. All Rights Reserved</p>
+              <p>© 2024 academy. All Rights Reserved</p>
             </div>
             <div className="social-media-icon">
               <p className="footer-icons">

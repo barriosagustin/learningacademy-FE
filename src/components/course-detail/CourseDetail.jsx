@@ -79,7 +79,6 @@ const CourseDetail = () => {
 
               <div className="about-course-container-img">
                 <img
-                  // src={`data:image/jpeg;base64,${base64Image}`}
                   src="https://echooling-react.vercel.app/static/media/1.b72c23dfb77d83dd1915.jpg"
                   alt=""
                   className="about-course-img"
