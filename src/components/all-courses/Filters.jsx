@@ -30,7 +30,6 @@ const Filters = ({ onCategoryChange, onLanguageChange, onPriceChange, onSkillCha
           <Select className="select" defaultValue="All Prices" onChange={onPriceChange}>
             <MenuItem value="Free courses">Free courses</MenuItem>
             <MenuItem value="Paid courses">Paid courses</MenuItem>
-            <MenuItem value="Subscribers only">Subscribers only</MenuItem>
             <MenuItem value="All Prices">All Prices</MenuItem>
           </Select>
           <Select className="select" defaultValue="All Skills" onChange={onSkillChange}>

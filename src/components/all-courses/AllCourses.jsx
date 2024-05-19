@@ -53,10 +53,14 @@ const AllCourses = () => {
     }
 
     if (filterPrice !== "All Prices") {
-      filtered = filtered.filter((course) => course.price === filterPrice);
+      if (filterPrice === "Paid Courses") {
+        filtered = filtered.filter((course) => course._doc.price > 0);
+      } else if(filterPrice === "Free courses"){
+        filtered = filtered.filter((course) => course._doc.price === 0);
+      }
     }
 
-    if (filterSkill !== "All Skills") {
+    if (filterSkill !== "All Skills" && filterSkill !== "Intermediate") {
       filtered = filtered.filter((course) => course.skill === filterSkill);
     }
 
@@ -137,7 +141,7 @@ const AllCourses = () => {
 
         {coursesLength > 0 ? (
           <div className="card">
-            <AllCoursesCard courses={courses}></AllCoursesCard>
+            <AllCoursesCard courses={currentCourses}></AllCoursesCard>
           </div>
         ) : (
           <div className="no-courses-message">

@@ -84,7 +84,7 @@ const AllCoursesCard = ({ courses }) => {
                     <div className="reviews">4.2 review</div>{" "}
                   </Typography>
                   <Typography variant="body2" fontSize={17} color={"#101217"}>
-                    ${course._doc?.price}
+                    {course._doc?.price === 0 ? "Free" : `$${course._doc?.price}`}
                   </Typography>
                 </div>
               </CardContent>

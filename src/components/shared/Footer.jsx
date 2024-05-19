@@ -4,6 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import logo from "/src/assets/img/academy-high-resolution-logo-white-transparent.png";
 import "../../styles/footer.css";
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
             <div className="footer-img">
               <img
                 width={200}
-                src="src/assets/img/academy-high-resolution-logo-white-transparent.png"
+                src={logo}
                 alt=""
               />
               <p style={{ maxWidth: "300px" }}>
